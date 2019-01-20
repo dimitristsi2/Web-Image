@@ -1,0 +1,118 @@
+body{
+	width:100%;
+	height:100%;
+}
+#wrapper {
+	height:100%;
+	width:100%;
+}
+#cord{
+  height:20%;
+  width:20%;
+padding-top: 5px;
+}
+#sect1{
+  height: 150px;
+  width:100%;
+  background-color: #424242;
+  padding-bottom: 80px;
+  color:white;
+}
+#sect1 p{
+  margin-top:0;
+  padding-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/*@font-face{
+	font-family:sansation;
+	src:url(sansation_light.woff);
+}*/
+.NormalCharacterStyle{
+font-family : Caviar Dreams;
+font-size : 20px;
+font-style: normal;
+font-variant: normal;
+color : #F1F1F1;
+color : rgb(241, 241, 241);
+}
+
+nav{
+  float:right;
+}
+#sect{
+	width:25%;
+	float:left;
+}
+footer i{
+  margin:0;
+  padding-top:20px;
+}
+#bo{
+	min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  background:#3391DA;
+  border-radius : 47px;
+  -moz-border-radius : 47px;
+  -webkit-border-radius : 47px;
+  color:white;
+}
+#name{
+	border: 1px solid #ccc;
+	 border-radius : 47px;
+  -moz-border-radius : 47px;
+  -webkit-border-radius : 47px;
+}
+input[type="file"] {
+    display:inline-block ;
+}
+
+/*for loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid blue;
+  border-right: 10px solid green;
+  border-bottom: 10px solid red;
+  border-left: 10px solid pink;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-left:45%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#art{
+	float:left;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+.NormalCharacter2{
+font-family : Courier Prime Code;
+font-size : 20px;
+color : #F1F1F1;
+color : rgb(241, 241, 241);
+}
+#divs{
+	width:50%;
+	margin-left:25%;
+	text-align:center;
+	border:3px solid black;
+}

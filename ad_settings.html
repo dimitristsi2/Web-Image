@@ -1,0 +1,122 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Advanced Settings</title>
+<script>
+function try1(){
+var si = localStorage.getItem("signin");
+document.getElementById("userlogged").value=si;
+$("#loguser").html(si);
+document.getElementById("loguser").value=si;
+document.getElementById("userlogged2").value=si;
+if(si==null){
+window.location.href = "error404.html";
+}
+else{
+}
+}
+//------------------------------------------------------------------------
+function logout(){
+localStorage.removeItem("signin");
+}
+</script>
+</head>
+<body onload="try1()">
+<div id="wrapper">
+  <section id="sect1" style="text-align:center">
+  <p class="NormalCharacterStyle" style="font-size:50px;"><strong style="color:#F6921E;font-weight:bold;text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">CORDOVA APK GENERATOR</strong></p>
+  </section>
+  <nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item" style="margin-left:300px;style;font-size:25px">Home</a>
+  <a href="signin.html" class="w3-button w3-bar-item" style="font-size:25px">Upload Site</a>
+  <a href="contact.html" class="w3-button w3-bar-item" style="font-size:25px">Contact</a>
+   <form action="logout.php" method="POST">
+  <input type="text" id="userlogged2" name="userlog"  style="display:none" value="" >
+     <button type="submit" class="w3-button w3-bar-item" style="float:right;background-color:black;border:0;padding-top:7px;color:white;font-size:25px" onclick="logout()">LogOut</button>
+  <button id="loguser" name="log" style="float:right;background-color:black;border:0;padding-top:7px;color:white;font-size:25px" disabled />
+  </form>
+</nav>
+<div>
+<form action="ad_settings.php" method="POST" enctype="multipart/form-data">
+<section class="w3-container w3-center w3-light-grey NormalCharacter2">
+<h1 style="padding-top:40px;padding-bottom:20px">Run Commands Settings</h1>
+<div id="divs">
+<article class="w3-center">
+<h2 for="sel" style="font-size:25px;margin-top:50px;margin-left:20px;float:left;">Add a plugin:</h2>
+  <select id="sel" style="margin-top:10px;margin-bottom:10px;background-color:#F1F1F1;margin-right:0px;margin-left:50px" name="plugin[]" multiple>
+  <option value="chromeapps">Chrome Apps</option>
+  <option value="scanner">Scanner</option>
+  <option value="proxy">Proxy App</option>
+  <option value="parse">Parse Handler</option>
+</select>
+</article>
+</div>
+<h1 style="padding-top:40px;padding-bottom:20px">OR</h1>
+<h1 style="padding-top:40px;padding-bottom:20px">ENTER YOUR OWN PLUGIN COMMANDS</h1>
+<div id="divs">
+<article class="w3-center">
+  <label for="inp6" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Enter your plugin commands seperated by a ';':</label>
+ <textarea id="inp6" type="text" name="plug2" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black" rows="4" cols="50" placeholder="cordova plugin add..."></textarea>
+</article>
+</div>
+<h1 style="padding-top:60px;padding-bottom:20px">config.xml Settings</h1>
+<div id="divs">
+<article class="w3-center">
+ <label for="inp" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Give Name to App:</label>
+  <input id="inp" type="text" name="nameapp" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black;margin-left:60px" placeholder="Name"/>
+  </article>
+  <article class="w3-center">
+ <label for="inp2" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Give Widget Id:</label>
+  <input id="inp2" type="text" name="id" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black;margin-left:90px" placeholder="ID"/>
+  </article>
+  <article class="w3-center">
+ <label for="inp3" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Give Email of Author:</label>
+  <input id="inp3" type="text" name="email" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black" placeholder="Email"/>
+  </article>
+  <article class="w3-center">
+ <label for="inp4" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Give Author Name:</label>
+  <input id="inp4" type="text" name="author" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black;margin-left:60px" placeholder="Author Name"/>
+  </article>
+  <article class="w3-center">
+ <label for="inp5" id="log2" name="log" style="font-size:25px;margin-left:20px;color:black;float:left;margin-top:20px">Give Description of App:</label>
+ <textarea id="inp5" type="text" name="desc" style="margin-top:15px;margin-bottom:15px;font-size:20px;text-align:center;background-color:#F1F1F1;color:black" rows="4" cols="50" placeholder="Enter Description here..."></textarea>
+  </article>
+</div>
+<h1 style="padding-top:50px">OR</h1>
+<h1 style="padding-top:40px;padding-bottom:20px">Upload your own config.xml</h1>
+<div id="divs">
+
+  <input id="file-upload" type="file" name="file" style="color:black;margin-top:15px;margin-bottom:15px" />
+</div>
+<input type="text" id="userlogged" name="userlog" style="display:none" value="">
+<input type="submit" id="save_btn" value="Save Options" style="margin-top:60px;margin-bottom:60px;background-color:#F1F1F1">
+</section>
+</form>
+</div>
+<div id="foot">
+<footer class="w3-container w3-center w3-black w3-xxlarge" style="height:120px">
+  <a href="#" style="color:#F6921E"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-twitter"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-flickr"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="color:#3391DA">w3.css</a>
+  </p>
+</footer>
+</div>
+</div>
+</body>
+</html>

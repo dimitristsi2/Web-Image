@@ -1,0 +1,95 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="css/style.css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cordova APK Generator</title>
+  <script>
+  function signin(){
+  //apothikeush tou username sto localstorage gia xrish stis epomenes selides
+ var user = document.getElementById("name").value;
+	localStorage.setItem("signin",user);
+//	localStorage.setItem("erase","0");
+  }
+  </script>
+  </head>
+  
+  <body>
+		<div id="wrapper">
+		<section id="sect1" style="text-align:center">
+  <p class="NormalCharacterStyle" style="font-size:50px;color:#F6921E;">CORDOVA APK GENERATOR</p>
+  </section>
+  <nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item" style="margin-left:160px;font-size:25px">Home</a>
+  <a href="contact.html" class="w3-button w3-bar-item" style="font-size:25px">Contact</a>
+</nav>
+
+<section class="w3-container w3-center">
+  <h2 class="w3-wide NormalCharacterStyle" style="color:#424242;font-weight:bold;padding-top:20px;padding-bottom:30px">WELCOME TO CORDOVA APK GENERATOR ONLINE</h2> 
+</section>
+<div id="bo">
+<section style="margin-left:30">
+<article id="sect" >
+<img src="img/docker.png" style="width:20%;height:20%;margin-left:40%;margin-top:10%">
+  </article>
+  <article id="sect">
+<img id="cord" src="img/cordova.svg" style="margin-left:40%;margin-top:10%">
+  </article>
+  <article id="sect">
+<img src="img/android.png" style="width:20%;height:25%;margin-left:40%;margin-top:10%">
+  </article>
+  <article id="sect">
+<img src="img/comb.png" style="width:40%;height:40%;margin-left:30%;margin-top:10%">
+  </article>
+</section>
+<section style="margin-left:30;padding-top:10%;">
+<article id="sect" style="background-color:#424242;height:200px;border:2px solid #F1F1F1;border-right:2px solid #F6921E;border-left:2px solid #F6921E">
+<p class="NormalCharacterStyle" style="color:#F1F1F1;text-align:center;padding-top:10%;padding-left:10px;padding-right:10px">Entire Web Site and conversion tools built with Docker. More information about Docker can be found <a href="https://www.docker.com/" style="color:#F6921E">here</a>.</p>
+</article>
+<article id="sect" style="background-color:#424242;height:200px;border:2px solid #F1F1F1;border-right:2px solid #F6921E;border-left:2px solid #F6921E">
+<p class="NormalCharacterStyle" style="color:#F1F1F1;text-align:center;padding-top:10%;padding-left:10px;padding-right:10px">Apache Cordova is the new Hybrid Platform Conversion Tool for building web applications for mobile devices.  More information about Cordova can be found <a href="https://cordova.apache.org/" style="color:#F6921E">here</a>.</p>
+</article>
+<article id="sect" style="background-color:#424242;height:200px;border:2px solid #F1F1F1;border-right:2px solid #F6921E;border-left:2px solid #F6921E">
+<p class="NormalCharacterStyle" style="color:white;text-align:center;padding-top:10%;padding-left:10px;padding-right:10px">Cordova can create web applications for mobiles, producing Android .APKs, targeting even different mobile OS versions. </p>
+</article>
+<article id="sect" style="background-color:#424242;height:200px;border:2px solid #F1F1F1;border-right:2px solid #F6921E;border-left:2px solid #F6921E">
+<p class="NormalCharacterStyle" style="color:white;text-align:center;padding-top:10%;padding-left:10px;padding-right:10px">Cordova supports all kind of <strong style="color:#F6921E">HTML , CSS</strong> & <strong style="color:#F6921E">JS</strong> combinations targeting  fully functional web applications for mobile devices. </p>
+</article>
+</section>
+</div>
+<div>
+<section style="height:50px;width:100%"></section>
+<section style="height:50%;width:100%;padding-top:2%;padding-bottom:2%;text-align:center" class="w3-light-grey">
+<h1 class="NormalCharacterStyle" style="color:#F6921E;font-size:90px">SO,    LET'S    START </h1>
+<form action="signup.php" method="POST">
+   <label for="name" style="font-size:25px;margin-right:20px;color:#424242;padding-top:60px" class="NormalCharacterStyle">Give your Project a name: </label>
+ <input  type="text" id="name" name="name" placeholder="Project Name" style="height:40px;text-align:center" required /></br>
+<button type="submit" id="name" class="custom-file-upload" style="margin-left:10px;margin-top:20px;width:150px;height:60px;font-size:25px;margin-bottom:10px" onclick="signin()">SUBMIT</button>
+  </form>
+</section>
+</div>
+<div id="foot">
+<footer class="w3-container w3-center w3-black w3-xxlarge" style="height:120px;padding-top:10px">
+  <a href="#" style="color:#F6921E"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-twitter"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-flickr"></i></a>
+  <a href="#" style="color:#F6921E"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="color:#3391DA">w3.css</a>
+  </p>
+</footer>
+</div>
+</div>
+</body>
+</html>
